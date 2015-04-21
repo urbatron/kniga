@@ -15,7 +15,7 @@ $q = $STH->fetchAll(PDO::FETCH_ASSOC);
 return $q;
 }
 $sub =2;
-if(@$_SERVER[REQUEST_METHOD]=="POST" and @$_POST['submit2']=="2"){
+if(@$_SERVER['REQUEST_METHOD']=="POST" and @$_POST['submit2']=="2"){
 $sub = $_POST['num'];
 setcookie('sub',$sub);
 }elseif(isset($_COOKIE['sub'])){
@@ -23,7 +23,7 @@ setcookie('sub',$sub);
 	$sub= $_COOKIE['sub'];
 }
 //Добавление в базу данных
-if(@$_SERVER[REQUEST_METHOD]=="POST" and @$_POST['submit1']=="1"){
+if(@$_SERVER['REQUEST_METHOD']=="POST" and @$_POST['submit1']=="1"){
 $name = $_POST['name'];
 $tel = $_POST['tel'];
 $message = $_POST['message'];
@@ -31,11 +31,11 @@ $w = "INSERT INTO contacti (name,tel,description) VALUES ('$name','$tel','$messa
 bas($w);
 }
 //Удаление из бызы
-if(@$_SERVER[REQUEST_METHOD]=="GET" and isset($_GET['delete'])){
+if(@$_SERVER['REQUEST_METHOD']=="GET" and isset($_GET['delete'])){
 $id = $_GET['delete'];
 $w = "DELETE FROM contacti WHERE id=$id";
 bas($w);
-header("Location: index.php");
+header("Location:".$_SERVER['HTTP_REFERER']);
 }
 $q = bas("SELECT * FROM contacti");
 

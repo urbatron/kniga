@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link href="css/style.css" type="text/css" rel="stylesheet">
-<title></title>
+<title>Гостевая книга</title>
+
 </head>
 <body>
-<div class="wrapper"><!-- WRAPPER-->
+<div class="knigaPHP"><!-- WRAPPER-->
  
 <form class="contact_form" action="" method="post" name="contact_form">
     <ul>
@@ -28,11 +28,11 @@
             <textarea name="message" cols="40" rows="6" required ></textarea>
         </li>
         <li>
-        	<button class="submit" type="submit" name="submit1" value="1">Отправить</button>
+        	<button class="submit" type="submit" name="submit1"  value="1">Отправить</button>
         </li>
     </ul>
 </form>
-
+<link href="css/style.css" type="text/css" rel="stylesheet">
 <form class="contact_form" action="" method="post" name="contact_form">
     <ul style="background: yellow">
         <li>
@@ -48,7 +48,7 @@
 
 
 
-<?php include 'filtr.php' ?>
+<?php include "filtr.php" ?>
 
 
 

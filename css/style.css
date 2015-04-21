@@ -1,54 +1,54 @@
-.wrapper{
+.knigaPHP{
 	width: 750px;
 	margin: 0 auto;
 }
-  .table td,
-  .table th {
+  .knigaPHP .table td,
+  .knigaPHP .table th {
     background-color: #fff !important;
   }
-    .table {
+    .knigaPHP .table {
     border-collapse: collapse !important;
   }
   
 }
-table {
+.knigaPHP table {
   max-width: 100%;
   background-color: transparent;
 }
-.table {
+.knigaPHP .table {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > td,
-.table > tfoot > tr > td {
+.knigaPHP .table > thead > tr > th,
+.knigaPHP .table > tbody > tr > th,
+.knigaPHP .table > tfoot > tr > th,
+.knigaPHP .table > thead > tr > td,
+.knigaPHP .table > tbody > tr > td,
+.knigaPHP .table > tfoot > tr > td {
   padding: 8px;
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
-.table > thead > tr > th {
+.knigaPHP .table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #dddddd;
 }
 
-.table > caption + thead > tr:first-child > th,
-.table > colgroup + thead > tr:first-child > th,
-.table > thead:first-child > tr:first-child > th,
-.table > caption + thead > tr:first-child > td,
-.table > colgroup + thead > tr:first-child > td,
-.table > thead:first-child > tr:first-child > td {
+.knigaPHP .table > caption + thead > tr:first-child > th,
+.knigaPHP .table > colgroup + thead > tr:first-child > th,
+.knigaPHP .table > thead:first-child > tr:first-child > th,
+.knigaPHP .table > caption + thead > tr:first-child > td,
+.knigaPHP .table > colgroup + thead > tr:first-child > td,
+.knigaPHP .table > thead:first-child > tr:first-child > td {
   border-top: 0;
 }
-.table > tbody + tbody {
+.knigaPHP .table > tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 
-.table .table {
+.knigaPHP .table .table {
   background-color: #ffffff;
 }
 
@@ -211,7 +211,7 @@ table th[class*="col-"] {
 *:focus {outline: none;}
 
 /* === Form Typography === */
-body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.knigaPHP {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
 .contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
 .form_hint, .required_notification {font-size: 11px;}
 
